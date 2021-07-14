@@ -16,8 +16,10 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying...'
-		sh 'mvn package deploy'
+                echo Deploying..'
+		sshagent(['tomcat']){ 
+		sh "scp -o StrictHostKeyChecking=no /04-deploy/target/WebAppCal-1.3.6.war centos@3.237.204.59:/home/centos/ apache-tomcat-7.0.94/webapps/
+}
 
             }
         }
