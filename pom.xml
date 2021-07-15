@@ -24,7 +24,7 @@
 <distributionManagement>
   <repository>
     <id>releases</id>
-    <url>http://3.237.204.59:8081/nexus/content/repositories/releases</url>
+    <url>http://100.24.106.159/nexus/content/repositories/releases</url>
   </repository>
 </distributionManagement>
 </project>
